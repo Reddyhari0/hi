@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+                
+
+    <style>
+        body {
+           color: black;
+           background-color: rgb(241, 241, 241);
+           text-align: center;
+           justify-content: center;
+        }
+        .dark-theme {
+           color: white;
+           background-color: rgb(26, 20, 20);
+        }
+        button {
+           width: 13rem;
+           height: 2rem;
+           font-size: 1.5rem;
+           background-color: rgb(240, 75, 30);
+           border: none;
+           border-radius: 12px;
+        }
+        p {
+           font-size: 1.2rem;
+        }
+     </style>
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+    </head>
+    <body>
+       <h2>Using the <i> toggle method to </i> toggle between light and dark mode in JavaScript. </h2>
+       <p>This is the content of the webpage. </p>
+       <button onclick = "changeMode()" id = "button"> Dark Mode </button>
+       <script>
+          function changeMode() {
+             var body = document.body;
+             
+             // toggle the theme
+             body.classList.toggle("dark-theme");
+             let button = document.getElementById('button');
+             
+             // change the button text
+             if (button.innerHTML == "Dark Mode") {
+                button.innerHTML = "Normal Mode";
+             } else {
+                button.innerHTML = "Dark Mode"
+             }
+          }
+       </script>
+    
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
